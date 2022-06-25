@@ -55,7 +55,7 @@ var (
 		"-g", "60",
 		"-f", "flv",
 	}
-	inputIndex = 6
+	inputIndex = 7
 )
 
 func getArgs(input string) ([]string, error) {
