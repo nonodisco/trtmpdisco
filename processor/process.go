@@ -40,7 +40,7 @@ var (
 	args = []string{
 		"-r", "30",
 		"-loop", "1",
-		"-i", "radio-background.jpg",
+		"-i", "./radio-background.jpg",
 		"-loglevel", "error",
 		"-i", "",
 		"-preset", "ultrafast",
