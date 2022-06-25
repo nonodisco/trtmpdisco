@@ -1,9 +1,6 @@
 name: Release
 
-on:
-  push:
-    tags:
-      - "*"
+on: push
       
 jobs:
   release:
@@ -26,7 +23,10 @@ jobs:
 
       - name: Release
         uses: softprops/action-gh-release@v1
+        env:
+         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
+          tag_name: ${{ github.run_number }}
           files: |
             build/linux-arm64
             build/linux-amd64
