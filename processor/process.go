@@ -39,14 +39,22 @@ func getOutput() (string, error) {
 var (
 	args = []string{
 		"-r", "30",
-		"-loop", "1", "-i", "radio-background.jpg",
+		"-loop", "1",
+		"-i", "radio-background.jpg",
 		"-loglevel", "error",
 		"-i", "",
-		"-preset", "ultrafast", "-b:v", "2500k",
-		"-c:v", "libx264", "-tune", "stillimage",
-		"-c:a", "libfdk_aac", "-ac", "2", "-ar", "44100",
-		"-pix_fmt", "yuv420p", "-g", "60",
-		"-profile:v", "high420", "-level", "4.2", "-f", "flv",
+		"-preset", "ultrafast",
+		"-b:v", "2500k",
+		"-c:v", "libx264",
+		"-tune", "stillimage",
+		"-c:a", "libfdk_aac",
+		"-ac", "2",
+		"-ar", "44100",
+		"-pix_fmt", "yuv420p",
+		"-g", "60",
+		"-profile:v", "high420",
+		"-level", "4.2",
+		"-f", "flv",
 	}
 	inputIndex = 6
 )
